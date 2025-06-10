@@ -37,8 +37,8 @@ func main() {
 	// fmt.Printf("Future Value (adjusted for inflation): %.2f", futureRealValue)
 	fmt.Print(formattedFV, formattedRFV)
 
-	fmt.Printf(`this is just to
-	show multiline output`)
+	// fmt.Printf(`this is just to
+	// show multiline output`)
 }
 
 func outputText(text string) {
