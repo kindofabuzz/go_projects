@@ -13,13 +13,13 @@ func main() {
 	var firstNumber = rand.Intn(8) + 2
 	var secondNumber = rand.Intn(8) + 2
 	var subtraction = rand.Intn(8) + 2
-	var answer int
+	var answer = firstNumber*secondNumber - subtraction
 
-	// for testing, showing picked random numbers
-	//fmt.Println(firstNumber, secondNumber, subtraction)
-	//fmt.Println("")
+	playGame(firstNumber, secondNumber, subtraction, answer)
+}
+
+func playGame(firstNumber int, secondNumber int, subtraction int, answer int) {
 	reader := bufio.NewReader(os.Stdin)
-
 	// display a welcome/instructions
 	fmt.Println("Guess the Number Game")
 	fmt.Println("---------------------")
@@ -42,6 +42,6 @@ func main() {
 	reader.ReadString('\n')
 
 	// give them the answer
-	answer = firstNumber*secondNumber - subtraction
 	fmt.Println("The answer is", answer)
+
 }
