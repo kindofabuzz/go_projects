@@ -10,9 +10,9 @@ import (
 const prompt = "and don't type your number, just press ENTER when ready."
 
 func main() {
-	var firstNumber = rand.Intn(8) + 2
-	var secondNumber = rand.Intn(8) + 2
-	var subtraction = rand.Intn(8) + 2
+	var firstNumber = rand.Intn(9) + 2
+	var secondNumber = rand.Intn(9) + 2
+	var subtraction = rand.Intn(9) + 2
 	var answer = firstNumber*secondNumber - subtraction
 
 	playGame(firstNumber, secondNumber, subtraction, answer)
