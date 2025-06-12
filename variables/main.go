@@ -3,17 +3,21 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math/rand"
 	"os"
 )
 
 const prompt = "and don't type your number, just press ENTER when ready."
 
 func main() {
-	var firstNumber = 2
-	var secondNumber = 5
-	var subtraction = 7
+	var firstNumber = rand.Intn(8) + 2
+	var secondNumber = rand.Intn(8) + 2
+	var subtraction = rand.Intn(8) + 2
 	var answer int
 
+	// for testing, showing picked random numbers
+	//fmt.Println(firstNumber, secondNumber, subtraction)
+	//fmt.Println("")
 	reader := bufio.NewReader(os.Stdin)
 
 	// display a welcome/instructions
